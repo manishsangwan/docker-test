@@ -1,12 +1,12 @@
 version: 2
-  jobs:
-    bulid:
-      working_directory: ~/tmp
-      docker:
-        - image: circleci/node:7
-        steps:
-          - checkout 
-          - run: npm install
-          - run: npm test
+jobs:
+  bulid:
+    working_directory: ~/tmp
+    docker:
+      - image: circleci/node:7
+      steps:
+        - checkout 
+        - run: npm install
+        - run: npm test
       
 
